@@ -58,12 +58,12 @@
   --color-theme-track-empty: #d3d4d8;
 
   --font-sans: "DM Sans", "sans-serif";
-  --font-heading: "DM Serif Display", "serif";
   --font-mono: "Geist Mono", monospace;
+  --font-serif: "Instrument Serif", serif;
 }
 
 :root {
-  --background: #f5f5ed;
+  --background: #f4ede4;
   --foreground: #12110c;
   --card: #f5f5ed;
   --card-foreground: #12110c;
@@ -97,6 +97,6 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    font-family: var(--font-sans), sans-serif;
   }
 }

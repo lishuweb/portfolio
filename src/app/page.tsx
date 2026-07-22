@@ -1,16 +1,26 @@
 import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Skills from "@/components/sections/Skills";
-import Projects from "@/components/sections/Projects";
-import Experience from "@/components/sections/Experience";
-import Contact from "@/components/sections/Contact";
+import About from "@/components/sections/about";
+import Client from "@/components/sections/client";
+import Experience from "@/components/sections/experience";
+import ProjectCard from "@/components/sections/project";
+import Publication from "@/components/sections/publication";
+import TechStack from "@/components/sections/stack";
+import ProjectPage from "./project/page";
 
 export default function Home() {
   return (
-    <>
+    <div className="pt-6 pb-6 pl-10 pr-10">
       <Navbar />
+
+      <main>
+        <About />
+        <Experience />
+        <TechStack />
+        <ProjectPage />
+        <Client />
+        <Publication />
+      </main>
+      {/* <Navbar />
       <main>
         <Hero />
         <About />
@@ -19,7 +29,7 @@ export default function Home() {
         <Experience />
         <Contact />
       </main>
-      <Footer />
-    </>
+      <Footer /> */}
+    </div>
   );
 }

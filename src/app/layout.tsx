@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { DM_Sans, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -8,10 +8,16 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const dmSerifDisplay = DM_Serif_Display({
-  variable: "--font-heading",
-  weight: ["400"],
+const geistMono = Geist_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${dmSerifDisplay.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full">{children}</body>
     </html>

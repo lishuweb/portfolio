@@ -3,25 +3,25 @@ import { Mail, MapPin, Code, Briefcase } from "lucide-react";
 const CONTACT_INFO = [
   {
     label: "Email",
-    value: "hello@johndoe.com",
-    href: "mailto:hello@johndoe.com",
+    value: "maharjanlishu@gmail.com",
+    href: "mailto:maharjanlishu@gmail.com",
     icon: Mail,
   },
   {
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Kathmandu, Nepal",
     icon: MapPin,
   },
   {
     label: "GitHub",
-    value: "@johndoe",
-    href: "https://github.com",
+    value: "@lishuweb",
+    href: "https://github.com/lishuweb",
     icon: Code,
   },
   {
     label: "LinkedIn",
-    value: "in/johndoe",
-    href: "https://linkedin.com",
+    value: "in/lishu-maharjan",
+    href: "https://www.linkedin.com/in/lishu-maharjan/",
     icon: Briefcase,
   },
 ];
@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <section id="contact" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-4xl">
-        <h2 className="font-heading text-3xl md:text-4xl text-theme-text mb-12">
+        <h2 className=" text-3xl md:text-4xl text-theme-text mb-12">
           Get in Touch
         </h2>
 
@@ -38,9 +38,9 @@ export default function Contact() {
           {/* Left: Message */}
           <div className="space-y-4">
             <p className="text-base leading-relaxed text-theme-text">
-              I&apos;m always open to new opportunities, collaborations, or just a
-              friendly chat. Whether you have a project in mind or just want to
-              say hi — reach out!
+              I&apos;m always open to new opportunities, collaborations, or just
+              a friendly chat. Whether you have a project in mind or just want
+              to say hi — reach out!
             </p>
             <p className="text-sm text-theme-text-secondary">
               Currently available for freelance work and full-time positions.
